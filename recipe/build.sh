@@ -1,13 +1,15 @@
 #! /usr/bin/bash
 set -e
 
-mkdir -p build
-cd build
+cd vendor/IREGI/src/
 
-cmake .. \
-  -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
-  -DCMAKE_BUILD_TYPE=Release
+# Remove vendored copies of code that are their own hep-forge packages
+rm -rf oneloop qcdloop
+rm -f makefile makefile_oneloop makefile_qcdloop
 
-NPROC=$(nproc 2>/dev/null || sysctl -n hw.ncpu)
-make -j"$NPROC"
-make install
+# Not parallel-safe -- must build single-threaded
+make -f makefile_ML5_lib FC="${FC}" FFLAGS="${FFLAGS} -std=legacy -Wall -ffixed-line-length-none -I${PREFIX}/include/oneloop"
+
+mv libiregi.a "${PREFIX}/lib/"
+mkdir -p "${PREFIX}/include/iregi"
+mv *.mod "${PREFIX}/include/iregi/"
