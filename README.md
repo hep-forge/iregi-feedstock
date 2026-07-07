@@ -5,11 +5,16 @@
 [![Anaconda Version](https://anaconda.org/hep-forge/iregi/badges/version.svg)](https://anaconda.org/hep-forge/iregi)
 [![Anaconda Platforms](https://anaconda.org/hep-forge/iregi/badges/platforms.svg)](https://anaconda.org/hep-forge/iregi)
 
-Feedstock for [iregi](https://github.com/mg5amcnlo/mg5amcnlo) — part of [hep-forge](https://anaconda.org/hep-forge).
+Feedstock for [iregi](https://github.com/mg5amcnlo/mg5amcnlo/tree/3.x/vendor/IREGI/src) — part of [hep-forge](https://anaconda.org/hep-forge).
 Builds linux-amd64 + linux-arm64 in one matrix workflow and uploads to the
 [hep-forge](https://anaconda.org/hep-forge) Anaconda channel.
 
 IREGI: dimensional regularization library vendored from MadGraph5_aMC@NLO
+
+## Architectures
+
+State per architecture: see the platforms badge above or [anaconda.org/hep-forge/iregi](https://anaconda.org/hep-forge/iregi).
+
 
 ## Install
 
@@ -20,3 +25,4 @@ conda install -c hep-forge -c conda-forge iregi
 ## Maintainers
 
 * [@meiyasan](https://github.com/meiyasan/)
+
