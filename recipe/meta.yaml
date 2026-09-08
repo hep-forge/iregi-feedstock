@@ -30,7 +30,7 @@ build:
 requirements:
   build:
     - {{ stdlib('c') }}
-    - {{ compiler('gfortran') }}
+    - {{ compiler('fortran') }}
     - make
     - libtool
   host:
