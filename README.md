@@ -13,7 +13,12 @@ IREGI: dimensional regularization library vendored from MadGraph5_aMC@NLO
 
 ## Architectures
 
-State per architecture: see the platforms badge above or [anaconda.org/hep-forge/iregi](https://anaconda.org/hep-forge/iregi).
+| Architecture | Latest published |
+|--------------|------------------|
+| linux-amd64 (`linux-64`) | ✅ `1.1.0` |
+| linux-arm64 (`linux-aarch64`) | ✅ `1.1.0` |
+
+_As of the last feedstock render; the badges above are live._
 
 
 ## Install
