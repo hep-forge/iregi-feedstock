@@ -14,7 +14,7 @@ package:
 
 source:
   # IREGI's source only exists vendored inside the MG5_aMC@NLO release tarball
-  url: "https://github.com/hep-packaging-coordination/mg5amcnlo-release-mirror/releases/download/3.5.7/MG5_aMC_v3.5.7.tar.gz"
+  url: "https://launchpad.net/mg5amcnlo/lts/lts.3.5.x/+download/MG5_aMC_v3.5.7.tar.gz"
   {% if versions.get(version, None) %}
   sha256: {{ versions.get(version) }}
   {% endif %}
